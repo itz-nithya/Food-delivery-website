@@ -30,7 +30,7 @@ const Login = ({ isOpen, onClose }) => {
                             <option value="+1">(+1)</option>
 
                         </select></div><span style={{ fontSize: "25px" }}>|</span>
-<div><input
+<div>                   <input
                             type="tel"
                             class="phone-number"
                             placeholder="Phone"

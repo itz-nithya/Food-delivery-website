@@ -16,8 +16,8 @@ export function GetTheApp() {
         <>
                      
                         <div className="zomato-logo">
-                            <div><img src={logo} alt="Zomato" width="150" height="60" /></div>
-                        
+                           <div><img src={logo} alt="Zomato" width="150" height="60" /></div>
+                         
                         
                             <div><span><span onClick={() => setLoginOpen(true)} style={{ cursor: "pointer" }}>Login</span>
                                 <Login isOpen={isLoginOpen} onClose={() => setLoginOpen(false)} /></span></div>

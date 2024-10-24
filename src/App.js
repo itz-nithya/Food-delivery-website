@@ -9,6 +9,8 @@ import { Signup } from "../src/MyWeb/Signup";
 import { Header } from './MyWeb/Component/Header';
 import { Card } from './MyWeb/Component/Card';
 import OrderOnline from './MyWeb/Component/OrderOnline';
+import { Dinning } from './MyWeb/Component/Dinning';
+import { Events } from './MyWeb/Component/Events';
 
 function App() {
   return (
@@ -22,6 +24,9 @@ function App() {
             <Route path="/investorrelations" element={<InvestorRelations />}></Route>
             <Route path="/addrestaurent" element={<AddRestaurent />}></Route>
             <Route path="/orderonline" element={<OrderOnline />}></Route>
+            <Route path="/dinning" element={<Dinning />}></Route>
+            <Route path="/events" element={<Events />}></Route>
+
 
             {/* <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<Signup />}></Route> */}

@@ -2,8 +2,23 @@ import "../css/Card.css";
 import foodimg from"../assets/images/cardimg-1.webp";
 import dinningimg from "../assets/images/dinningimg-transformed.webp";
 import liveimg from "../assets/images/liveevent-transformed.jpeg";
+import { useNavigate } from 'react-router-dom';
+
 
 export function Card(){
+        const navigate = useNavigate();
+
+  const orderonline = () => {
+    navigate('/orderonline');
+  };
+  const dinning = () => {
+        navigate('/dinning');
+      };
+      const events = () => {
+        navigate('/events');
+      };
+        
+
 
     return(
         <>
@@ -11,7 +26,9 @@ export function Card(){
         <div className="row card-parent">
         <div className="col-md-4 card">
             
-                <img src={foodimg}/>
+                <img src={foodimg}
+                      onClick={orderonline}
+                     style={{ cusor:'prointer'}}/>
                 <h1>Order Online</h1>
                 <span>Stay home and order to your home step</span>
             
@@ -19,7 +36,9 @@ export function Card(){
         </div>
         <div className="col-md-4 card">
             
-                <img src={dinningimg}/>
+                <img src={dinningimg}
+                onClick={dinning}
+                style={{ cusor:'prointer'}}/>
                 <h1>Dinning</h1>
                 <span>View the city's favourite dinning venues</span>
     
@@ -27,7 +46,10 @@ export function Card(){
         </div>
         <div className="col-md-4 card">
             
-                <img src={liveimg}/>
+                <img src={liveimg}
+                onClick={events}
+                style={{ cusor:'prointer'}}/>
+
                 <h1>Live Events</h1>
                 <span>Discover india's best events & concert's</span>
             

@@ -1,6 +1,6 @@
 import '../css/Header.css';
 import { NavLink } from 'react-router-dom';
-import logo from "../assets/images/yum-removebg-preview (1).png";
+import logo from "../assets/images/zomatologo-removebg-preview (1).png";
 import { useState } from 'react';
 import { Card } from './Card';
 import { Collections } from './Collections';
@@ -12,8 +12,9 @@ import Signup from '../Signup';
 import Login from '../Login';
 
 export function Header() {
+  const [error, setError] = useState(null);  
   const [location, setLocation] = useState(null);
-  const [error, setError] = useState(null);
+
   const [clicked, setClicked] = useState(false);
     const [isPopupOpen, setPopupOpen] = useState(false);
     const [isLoginOpen, setLoginOpen] = useState(false);
@@ -71,8 +72,7 @@ export function Header() {
                   </li>
                   <li className="nav-item mb-3">
                   <span><span onClick={openPopup} style={{cursor:"pointer"}}>Sign Up</span>
-    
-    <Signup isOpen={isPopupOpen} onClose={closePopup} /></span>
+                    <Signup isOpen={isPopupOpen} onClose={closePopup} /></span>
                   </li>
                 </ul>
               </div>
