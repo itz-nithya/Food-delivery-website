@@ -1,10 +1,10 @@
 import { useState } from "react";
-import logo from "../MyWeb/assets/images/logo-black-removebg-preview.png"
-import "../MyWeb/css/GetTheApp.css"
-import Login from "./Login"
-import Signup from "./Signup"
-import { Section5 } from "./Component/Section5";
-import { Footer } from "./Component/Footer";
+import logo from "../assets/images/logo-black-removebg-preview.png"
+import "../css/GetTheApp.css"
+import Login from "../Component/Login"
+import Signup from "../Component/Signup"
+import { Section5 } from "../Component/Section5";
+import { Footer } from "../Component/Footer";
 export function GetTheApp() {
     const [isPopupOpen, setPopupOpen] = useState(false);
     const [isLoginOpen, setLoginOpen] = useState(false);

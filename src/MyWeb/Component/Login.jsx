@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import '../MyWeb/css/Login.css';
-import india from "../MyWeb/assets/images/india.webp"
+import '../css/Login.css';
+import india from "../assets/images/india.webp"
 
 const Login = ({ isOpen, onClose }) => {
     const [number, setNumber] = useState('');

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../MyWeb/css/Signup.css';
+import '../css/Signup.css';
 
 const Signup = ({ isOpen, onClose }) => {
     const [username, setUsername] = useState('');

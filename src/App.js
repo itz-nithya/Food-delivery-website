@@ -1,15 +1,12 @@
 import './App.css';
 
 import { BrowserRouter, Route, Routes} from "react-router-dom"
-import { GetTheApp } from "./MyWeb/GetTheApp";
-import { Login } from "./MyWeb/Login";
-import { InvestorRelations } from "./MyWeb/InvestorRelations";
-import { AddRestaurent } from "./MyWeb/AddRestaurent";
-import { Signup } from "../src/MyWeb/Signup";
+import { GetTheApp } from "./MyWeb/Component/GetTheApp";
+import { InvestorRelations } from "./MyWeb/Component/InvestorRelations";
+import { AddRestaurant } from "./MyWeb/Component/AddRestaurant";
 import { Header } from './MyWeb/Component/Header';
-import { Card } from './MyWeb/Component/Card';
 import OrderOnline from './MyWeb/Component/OrderOnline';
-import { Dinning } from './MyWeb/Component/Dinning';
+import { Dining } from './MyWeb/Component/Dining';
 import { Events } from './MyWeb/Component/Events';
 
 function App() {
@@ -19,17 +16,17 @@ function App() {
         <BrowserRouter>
           
           <Routes>
-            <Route path="/" element={<Header />}></Route>
+            <Route path="/home" element={<Header />}></Route>
             <Route path="/gettheapp" element={<GetTheApp />}></Route>
             <Route path="/investorrelations" element={<InvestorRelations />}></Route>
-            <Route path="/addrestaurent" element={<AddRestaurent />}></Route>
+            <Route path="/addrestaurant" element={<AddRestaurant />}></Route>
             <Route path="/orderonline" element={<OrderOnline />}></Route>
-            <Route path="/dinning" element={<Dinning />}></Route>
+            <Route path="/dinning" element={<Dining />}></Route>
             <Route path="/events" element={<Events />}></Route>
+            
 
 
-            {/* <Route path="/login" element={<Login />}></Route>
-          <Route path="/signup" element={<Signup />}></Route> */}
+          
           
 
           </Routes>

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../MyWeb/css/AddRestaurant.css";
-import Login from "./Login";
-export function AddRestaurent(){
+import "../css/Login.css";
+import Login from "../Component/Login.jsx";
+export function AddRestaurant(){
 
     const [isLoginOpen, setLoginOpen] = useState(false);
     return(

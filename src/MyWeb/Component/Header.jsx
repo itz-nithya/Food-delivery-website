@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom';
 import logo from "../assets/images/zomatologo-removebg-preview (1).png";
 import { useState } from 'react';
 import { Card } from './Card';
-import { Collections } from './Collections';
+import { Collections } from '../Component/Collections';
 import { Locality } from './Locality';
 import { Section5 } from './Section5';
 import { Section6 } from './Section6';
 import { Footer } from './Footer';
-import Signup from '../Signup';
-import Login from '../Login';
+import Signup from './Signup';
+import Login from './Login';
 
 export function Header() {
   const [error, setError] = useState(null);  
@@ -61,7 +61,7 @@ export function Header() {
                     })}>Investor Relations</NavLink>
                   </li>
                   <li className="nav-item mb-3">
-                    <NavLink to="/addrestaurent" className="underline" style={({ isActive }) => ({
+                    <NavLink to="/addrestaurant" className="underline" style={({ isActive }) => ({
                       color: isActive ? 'greenyellow' : 'black'
                     })}>Add Restaurant</NavLink>
                   </li>
