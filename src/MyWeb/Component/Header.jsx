@@ -2,20 +2,20 @@ import '../css/Header.css';
 import { NavLink } from 'react-router-dom';
 import logo from "../assets/images/zomatologo-removebg-preview (1).png";
 import { useState } from 'react';
-import { Card } from './Card';
+import { Card } from '../Component/Card';
 import { Collections } from '../Component/Collections';
-import { Locality } from './Locality';
-import { Section5 } from './Section5';
-import { Section6 } from './Section6';
-import { Footer } from './Footer';
-import Signup from './Signup';
-import Login from './Login';
+import { Locality } from '../Component/Locality';
+import { Section5 } from '../Component/Section5';
+import { Section6 } from '../Component/Section6';
+import { Footer } from '../Component/Footer';
+import Signup from '../Component/Signup';
+import Login from '../Component/Login';
 
 export function Header() {
   const [error, setError] = useState(null);  
   const [location, setLocation] = useState(null);
 
-  const [clicked, setClicked] = useState(false);
+  
     const [isPopupOpen, setPopupOpen] = useState(false);
     const [isLoginOpen, setLoginOpen] = useState(false);
 
